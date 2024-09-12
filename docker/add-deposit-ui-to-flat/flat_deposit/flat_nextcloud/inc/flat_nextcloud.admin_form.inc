@@ -102,7 +102,7 @@ function flat_nextcloud_admin_form($form, &$form_state)
 function keep_default_password($form, &$form_state) {
 
 
-    if (empty($form_state['nextcloud']['admin_pass'])) {
+    if (empty($form_state['values']['nextcloud']['admin_pass'])) {
         $form_state['values']['nextcloud']['admin_pass'] = variable_get('flat_nextcloud')['admin_pass'];
     }
 
